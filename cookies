@@ -1,0 +1,5 @@
+#LWP-Cookies-2.0
+Set-Cookie3: as="\"https://www.douban.com/\""; path="/"; domain=".douban.com"; path_spec; domain_dot; expires="2017-08-12 17:06:50Z"; version=0
+Set-Cookie3: bid=qJYmyE3GBVU; path="/"; domain=".douban.com"; path_spec; domain_dot; expires="2018-07-28 12:47:39Z"; version=0
+Set-Cookie3: ll="\"108288\""; path="/"; domain=".douban.com"; path_spec; domain_dot; expires="2018-07-28 12:47:39Z"; version=0
+Set-Cookie3: ue="\"2384172887@qq.com\""; path="/accounts"; domain=".douban.com"; domain_dot; expires="2018-08-11 09:01:54Z"; httponly=None; version=0
