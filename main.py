@@ -112,7 +112,7 @@ def get_comment(filename):  #filename为爬取得内容保存的文件
     next_url='?start=20&limit=20&sort=new_score&status=P'
     f=open(filename,'w+',encoding='utf-8')
     while(True):
-        time.sleep(2)
+        time.sleep(5)
         comment_url='https://movie.douban.com/subject/26363254/comments'
         data={
             'start':'27',
@@ -154,7 +154,7 @@ def get_comment(filename):  #filename为爬取得内容保存的文件
         begin=begin+1
         #如果爬取了6次则多休息2秒
         if(begin%6==0):
-            time.sleep(2)
+            time.sleep(30)
             print('休息...')
         print(next_url)
     f.close()
