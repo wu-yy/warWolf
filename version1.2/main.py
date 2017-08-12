@@ -241,9 +241,9 @@ if __name__=='__main__':
     else:
         print('xs')
         login('dsd@qq.com','sdzxc642')
-    #get_comment('key.txt')
-    #get_movie_sort()
-    thread_get_comment('key2.txt')
+    #get_comment('key.txt')  #单线程爬虫
+   
+    thread_get_comment('key2.txt')  #多线程爬虫
     save_jieba_result('key2.txt')
     draw_wordcloud('pjl_jieba.txt')
 
