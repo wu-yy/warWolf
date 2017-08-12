@@ -139,7 +139,8 @@ def get_comment(filename):  #filename为爬取得内容保存的文件
             count2=s.find('<p class="">')
             count3=s.find('</p>')
             s2=s[count2+12:count3]  #抽取字符串中的评论
-            f.write(s2)
+            if 'class' not in s2:
+                f.write(s2)
 
         #获取下一页的链接
         next_url=soup.find_all('div',{'id':'paginator'})
@@ -195,7 +196,8 @@ def thread_get_comment(filename):
                     count2 = s.find('<p class="">')
                     count3 = s.find('</p>')
                     s2 = s[count2 + 12:count3]  # 抽取字符串中的评论
-                    f.write(s2)
+                    if 'class' not in s2:
+                        f.write(s2)
 
                 # 获取下一页的链接
                 next_url = soup.find_all('div', {'id': 'paginator'})
